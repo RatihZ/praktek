@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Konversi Nilai Angka Menjadi Huruf</title>
+<script language="Javascript">
+
+    function konv() {
+        var angka = document.send.N1. value
+        if (angka >= 0 && angka <= 40) {
+            document.send.N2. value = "E";
+        } else if (angka > 40 && angka <= 55) {
+            document.send.N2. value = "D";
+        } else if (angka > 55 && angka <= 60) {
+            document.send.N2. value = "C";
+        } else if (angka > 60 && angka <= 65) {
+            document.send.N2. value = "BC";
+        } else if (angka > 65 && angka <= 70) {
+            document.send.N2. value = "B";
+        } else if (angka > 70 && angka <= 80) {
+            document.send.N2. value = "AB";
+        } else if (angka > 80 && angka <= 100) {
+            document.send.N2. value = "A";
+        } else {
+            document.send.N2. value = "!MASUKKAN NILAI 1-100!"
+        }
+    }
+</script>
+</head>
+<body>
+    <h1>Ditingkat Mana Nilai Anda?</h1>
+    <form method="POST" name="send">
+        <p>Nilai : <input type="text" name="N1" size="25"> Tingkat : <input type="text" name="N2" size="25"> </p>
+        <p><input type="button" value="Konfirmasi" onclick="konv()"></p>
+    </form>
+
+</body>
+
+</html>

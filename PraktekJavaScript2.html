@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Aplikasi Kalkulator sederhana</title>
+    <script language="Javascript">
+
+        document.write("Dimodifikasi terakhir pada " + document.lastModified);
+
+  function tmbh() { 
+            var K1 = document.calculator.K1.value
+            var K2 = document.calculator.K2.value
+            var K3 = parseInt(K1) + parseInt(K2)
+            document.calculator.K3. value = K3
+        }
+
+        function krg() {
+            var K1 = document.calculator.K1.value
+            var K2 = document.calculator.K2.value
+            var K3 = parseInt(K1) - parseInt(K2)
+            document.calculator.K3. value = K3
+        }
+
+        function kl() {
+            var K1 = document.calculator.K1.value
+            var K2 = document.calculator.K2.value
+            var K3 = parseInt(K1) * parseInt(K2)
+            document.calculator.K3. value = K3
+        }
+
+        function bg() {
+            var K1 = document.calculator.K1.value
+            var K2 = document.calculator.K2.value
+            var K3 = parseInt(K1) / parseInt(K2)
+            document.calculator.K3. value = K3
+        }
+    
+</script>
+</head>
+
+<body>
+    <h1>Calculator Online</h1>
+
+    <form name="calculator">
+        <p>Bilangan 1 : <input type="text" name="K1"></p>
+        <p>Bilangan 2 : <input type="text" name="K2"></p>
+        <p >
+            <input style="margin-left: 120px; font-size: 18pt;" type="button" value="+" onclick="tmbh()"> 
+            <input style="margin-left: 48px;  font-size: 18pt;" type="button" value="-" onclick="krg()">
+        </p>
+        <p>
+            <input style="margin-left: 120px;  font-size: 18pt;" type="button" value="x" onclick="kl()"> 
+            <input style="margin-left: 50px;  font-size: 18pt;" type="button" value="/" onclick="bg()">
+        </p>
+        <p>Hasil &emsp; &nbsp; &nbsp; : <input type="text" name="K3"></p>
+
+    </form>
+</body>
+
+</html>
